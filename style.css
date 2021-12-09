@@ -34,7 +34,7 @@ body{
 #channel-container{
     text-align: left;
     width: 220px;
-    height: 450px;
+    height: 420px;
     margin: 0 auto;
     overflow-y: auto;
 }
@@ -88,7 +88,7 @@ body{
 #playlist-container{
     text-align: left;
     width: 220px;
-    height: 450px;
+    height: 420px;
     margin: 0 auto;
     overflow-y: auto;
 }
@@ -111,12 +111,16 @@ body{
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
 
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-track-piece {
+    background: #04293A;
+}
+
+::-webkit-scrollbar-thumb {
     background: #ECB365;
-  }
+}
 
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #f3ce9a;
-  }
+}
