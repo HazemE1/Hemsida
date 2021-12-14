@@ -5,7 +5,7 @@ body{
 /*Wrapper*/
 .wrapper{
     background-image: linear-gradient(#064663, #041C32);
-    color: #f0eae0;
+    color: #FFE3D8;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-auto-rows: minmax(60px, auto);
@@ -18,7 +18,7 @@ body{
 
 /*Header*/
 .header{
-    color: #ECB365;
+    color: #c29c98;
     grid-column: 1/4;
     text-align: left;
     margin-left: 2em;
@@ -26,14 +26,14 @@ body{
 
 /*Channels*/
 .channel{
-    background-color: #064663;
-    height: 500px;
+    background-color: #041c3263;
+    height: 525px;
     text-align: center;
 }
 
 #channel-container{
     text-align: left;
-    width: 220px;
+    width: 250px;
     height: 420px;
     margin: 0 auto;
     overflow-y: auto;
@@ -45,7 +45,7 @@ body{
 }
 
 #channel-container > div:hover {
-    background-color: #0e5677;
+    background-color: #ffffff18;
 }
 
 /*Main*/
@@ -67,6 +67,11 @@ body{
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 70px;
+    transition: all .3s ease-in-out;
+}
+
+#music-box:hover {
+    transform: scale(1.1);
 }
 
 #recommendation {
@@ -75,19 +80,35 @@ body{
     margin: 0 auto;
 }
 
-#recommendation > div {
+#recommendation > h3 {
+    color: #c29c98;
+}
+
+#recomm-container {
+    background: #ffffff0a;
     text-align: left;
+    padding: 20px;
+}
+
+#recomm-container > div {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+#recomm-container > div:hover {
+    background: #ffffff18;
 }
 
 /*Playlist*/
 .playlist{
-    background-color: #064663;
+    background-color: #041c3263;
+    height: 525px;
     text-align: center;
 }
 
 #playlist-container{
     text-align: left;
-    width: 220px;
+    width: 250px;
     height: 420px;
     margin: 0 auto;
     overflow-y: auto;
@@ -99,7 +120,7 @@ body{
 }
 
 #playlist-container > div:hover {
-    background-color: #0e5677;
+    background-color: #ffffff18;
 }
 
 /*Footer*/
@@ -114,13 +135,13 @@ body{
 }
 
 ::-webkit-scrollbar-track-piece {
-    background: #04293A;
+    background: #021b27;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ECB365;
+    background: #BBBBBB;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #f3ce9a;
+    background: #d3d3d3;
 }
