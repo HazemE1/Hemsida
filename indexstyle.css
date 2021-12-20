@@ -24,6 +24,26 @@ body{
     margin-left: 2em;
 }
 
+.logout {
+    width: 50px;
+}
+
+.logout > img {
+    position: absolute;
+    top: 2em;
+    right: 3em;
+    width: 35px;
+    height: auto;
+}
+
+.logout .logout-hover {
+    display: none;
+}
+
+.logout:hover .logout-hover {
+    display: inline;
+}
+
 /*Channels*/
 .channel{
     background-color: #041c3263;
@@ -96,6 +116,31 @@ body{
 }
 
 #recomm-container > div:hover {
+    background: #ffffff18;
+}
+
+#album {
+    width: 70%;
+    padding: 15px;
+    margin: 0 auto;  
+}
+
+#album > h3 {
+    color: #c29c98; 
+}
+
+#album-container {
+    background: #ffffff0a;
+    text-align: left;
+    padding: 20px;  
+}
+
+#album-container > div {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+#album-container > div:hover {
     background: #ffffff18;
 }
 
