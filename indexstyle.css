@@ -24,6 +24,26 @@ body{
     margin-left: 2em;
 }
 
+.logout {
+    width: 50px;
+}
+
+.logout > img {
+    position: absolute;
+    top: 2em;
+    right: 3em;
+    width: 35px;
+    height: auto;
+}
+
+.logout .logout-hover {
+    display: none;
+}
+
+.logout:hover .logout-hover {
+    display: inline;
+}
+
 /*Channels*/
 .channel{
     background-color: #041c3263;
