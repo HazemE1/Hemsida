@@ -1,15 +1,15 @@
+/* Body */
 body{
     background-image: linear-gradient(#064663, #041C32);
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*Wrapper*/
 .wrapper{
-    background-image: linear-gradient(#064663, #041C32);
     color: #FFE3D8;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-auto-rows: minmax(60px, auto);
-    font-family: 'Quicksand', sans-serif;
 }
 
 .wrapper > div{
