@@ -265,8 +265,8 @@ function savetrackID(songName , artistName) {
             }
             else{
                 var trackID = result.tracks.items[0].id;
-                setCookie('trackID', trackID);
                 setCookie('trackID2', trackID)
+                setCookie('trackID', trackID);
             }
            console.log("Hämtar:Track id::-->" + getCookie("trackID") + " För låten:" + songName) 
         },
@@ -317,7 +317,7 @@ function getRecommendation(){
         }),
         async:false,
         success: function(result) {
-            var  artistNameToSplit = artistName.split(/[&,(:]+/);
+            var  artistNameToSplit = artistName.split(/[&,]+/);
             var  artistNametoSearch = artistNameToSplit[0];
             if(artistNameToSplit.length > 1){
                 if(artistNametoSearch.charAt(artistNametoSearch.length - 1) == " "){
@@ -331,18 +331,20 @@ function getRecommendation(){
                       if(result.artists.items[key].name.toUpperCase() == artistNametoSearch.toUpperCase()){
                         var artistId = result.artists.items[key].id;
                         setCookie("userID2",artistId)
+                        setCookie('artistId', artistId);
                         break;
                     }
                     else{
                         if(!result.artists.items[0]){
                             artistId = result.artists.items[0].id
+                            setCookie('artistId', artistId);
                         }
                         else{
                             artistId = getCookie("userID2")
+                            setCookie('artistId', artistId);
                         }
                     }
                 }   
-                setCookie('artistId', artistId);
                 console.log("Hämtar:Artist id::-->" + getCookie("artistId"))   
         },
         error: function(request, status, error) {
